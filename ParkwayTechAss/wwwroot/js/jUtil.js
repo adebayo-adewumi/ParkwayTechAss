@@ -24,8 +24,6 @@ function CalculateSurCharge() {
     });
 
     ajaxPost.done(function (response) {
-        $(".surcharge-response").html('<div class="alert alert-success"><p>You will be charged: <strong>NGN ' + response.amount + ' + NGN' + response.charge + '(Fee)</strong></p> <p>Therefore we suggest you transfer: <strong>NGN ' + response.transferAmount + '</strong></p></div > ');
-
         $(".response-body").append('<tr>' +
             '<td>' + response.amount + '</td >' +
             '<td>' + response.transferAmount + '</td>' +
