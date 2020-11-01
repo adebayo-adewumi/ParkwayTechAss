@@ -1,0 +1,40 @@
+﻿@model Fee 
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container m-lg-5">
+    <div class="row">
+
+        <!--Fee Calculator-->
+        <div class="col-sm">
+            <form>
+                <h1>Transaction Fee Calculator</h1>
+                <div class="fee-response"></div>
+                <div class="form-group">
+                    <label>Amount to be transferred</label>
+                    <input type="number" class="form-control" name="fee" value="0">
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="CalculateCharge();">Calculate</button>
+            </form>
+        </div>
+        <!-- End -->
+
+        <!---->
+        <div class="col-sm">
+            <h1>Transaction SurCharge</h1>
+            <form>
+                <div class="surcharge-response"></div>
+                <div class="form-group">
+                    <label>Amount to be transferred</label>
+                    <input type="number" class="form-control" name="surcharge" value="0">
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="CalculateSurCharge();">Calculate</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

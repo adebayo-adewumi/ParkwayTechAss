@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kWU2wNK/rx/8pCM7j5HmA7xRZXKS8YMPk5DOn3jbVIGG34cMV9oQsN1b5ht0bTpMAv7SLmkRB+OTUt7Ky6jA0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\ParkwayTechAss\\ParkwayTechAss\\ParkwayTechAss.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
