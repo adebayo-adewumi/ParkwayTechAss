@@ -48,7 +48,7 @@ namespace ParkwayTechAss.Controllers
         public JsonResult CalculateSurCharge(string amount)
         {
             var amt = Convert.ToDecimal(amount);
-            using (StreamReader sr = System.IO.File.OpenText("FeeConfig\\fees.config1.json"))
+            using (StreamReader sr = System.IO.File.OpenText("FeeConfig\\fees.config2.json"))
             using (JsonTextReader reader = new JsonTextReader(sr))
             {
                 JObject o = (JObject)JToken.ReadFrom(reader);
