@@ -58,11 +58,20 @@ namespace ParkwayTechAss.Controllers
                     if (amt < (decimal)f["maxAmount"])
                     {
                         expectedAmount = amt - (decimal)f["feeAmount"];
+                        charge = (decimal)f["feeAmount"];
                         break;
                     }
                 }
 
-                return Json(expectedAmount);
+                FeeElement fe = new FeeElement()
+                {
+                    Amount = expectedAmount + charge,
+                    TransferAmount = expectedAmount,
+                    Charge = charge,
+                    DebitAmount = expectedAmount + charge
+                };
+
+                return Json(fe);
             }
         }
     }

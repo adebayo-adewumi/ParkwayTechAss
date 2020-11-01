@@ -6,21 +6,11 @@ using Newtonsoft.Json.Converters;
 
 namespace ParkwayTechAss.Models
 {
-    public partial class Fee
+    public class FeeElement
     {
-        [JsonProperty("fees")]
-        public Fee[] Fees { get; set; }
-    }
-
-    public partial class FeeElement
-    {
-        [JsonProperty("minAmount")]
-        public long MinAmount { get; set; }
-
-        [JsonProperty("maxAmount")]
-        public long MaxAmount { get; set; }
-
-        [JsonProperty("feeAmount")]
-        public long FeeAmount { get; set; }
+        public decimal Amount { get; set; }
+        public decimal TransferAmount { get; set; }
+        public decimal Charge { get; set; }
+        public decimal DebitAmount { get; set; }
     }
 }
