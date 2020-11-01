@@ -34,7 +34,7 @@ namespace ParkwayTechAss.Controllers
 
                 foreach (var f in o["fees"])
                 {
-                    if(amt < (decimal)f["maxAmount"])
+                    if(amt <= (decimal)f["maxAmount"])
                     {
                         charge = (decimal)f["feeAmount"];
                         break;
@@ -55,7 +55,7 @@ namespace ParkwayTechAss.Controllers
 
                 foreach (var f in o["fees"])
                 {
-                    if (amt < (decimal)f["maxAmount"])
+                    if (amt <= (decimal)f["maxAmount"])
                     {
                         expectedAmount = amt - (decimal)f["feeAmount"];
                         charge = (decimal)f["feeAmount"];
